@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-#list
+################ list ################ 
 L=list(range(100))
 print('L=',L)
 
@@ -27,9 +27,12 @@ print(classmates)
 #list元素也可以是另一个list
 list=['king',['kiss','xiao'],'ni']
 print(list)
-#tuple不可变列表
+
+################# tuple不可变列表 ################# 
+# 另一种有序列表叫元组： tuple
 t=('king','kiss','lin')
 print(t)
+# 只有 1 个元素的 tuple 定义时必须加一个逗号,，来消除歧义
 t1=(1,)
 print(t1)
 #来看一个“可变的”tuple：

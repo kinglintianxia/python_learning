@@ -11,7 +11,8 @@ sum=0
 for x in [1,2,3,4,5,6,7,8,9,10]:
 	sum+=x
 print(sum)
-
+# range(5) = [0,5)
+# range(5)生成的序列是从 0 开始小于 5 的整数
 print(list(range(5)))
 
 #1+2+...+100
