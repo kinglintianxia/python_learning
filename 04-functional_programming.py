@@ -3,8 +3,8 @@
 
 #函数式编程
 
-#####高阶函数Higher-order function#######
-def add(x,y,f):
+##### 高阶函数Higher-order function #######
+def add(x,y,f):	# 传入函数
 	print(f(x)+f(y))
 add(-5,6,abs)
 

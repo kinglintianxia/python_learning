@@ -10,6 +10,9 @@ print(classmates)
 print(len(classmates))
 print('classmates[0]:',classmates[0])
 print('classmates[-1]:',classmates[-1])
+# king
+for i, name in enumerate(classmates):
+	print ("classmates_%s: %s" % (i, name))
 
 #list是可变有序表
 classmates.append('Anan')

@@ -1,30 +1,30 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 try:
-	f=open('/Users/King/Documents/python练习/mydict.py','r')
+	f=open('mydict.py','r')
 	print(f.read())
 finally:
 	if f:
 		f.close()
 
 #引入了with 语句来自动帮我们调用close()方法：
-with open('/Users/King/Documents/python练习/mydict.py','r') as f:
+with open('mydict.py','r') as f:
 	print(f.read())
 	
-f=open('/Users/King/Documents/python练习/mydict.py','r')
+f=open('mydict.py','r')
 for line in f.readlines():
 	print(line.strip())
 
 #二进制文件
-f=open('/Users/King/Pictures/Saved Pictures/1.jpg','rb')
+f=open('img/1.png','rb')
 print(f.read())
 
 #写文件
-f=open('/Users/King/Documents/python练习/test.txt','w')
+f=open('test.txt','w')
 f.write('Hello,Python!')
 f.close()
 #所以，还是用with语句来得保险：
-with open('/Users/King/Documents/python练习/test.txt','w') as f:
+with open('test.txt','w') as f:
 	f.write('Hello,Python3!')
 
 	
@@ -51,7 +51,7 @@ print(os.name)
 print(os.environ)
 print('PATH:',os.environ.get('PATH'))
 print('绝对路径:',os.path.abspath('.'))
-os.path.join('/Users/King/Documents/python练习','testdir')
+os.path.join('/home/king/Documents/king/python_learning','testdir')
 #os.mkdir('/Users/King/Documents/python练习/testdir')
 #os.rmdir('/Users/King/Documents/python练习/testdir')
 print(os.path.split('/Users/king/testdir'))
